@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Prediction App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Prediction App</h1>
+        <form action="/predict" method="post">
+            <label for="stock">Choose a stock to predict:</label>
+            <select name="stock" id="stock">
+                <option value="1">Gas</option>
+                <option value="2">Gold</option>
+                <option value="3">Oil</option>
+                <option value="4">Silver</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
